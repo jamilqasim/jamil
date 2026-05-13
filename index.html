@@ -1,9 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jamil Qasim | CRM & Digital Fundraising Expert</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0f172a;
+    color:white;
+    line-height:1.7;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+}
+
+.hero img{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #3b82f6;
+    margin-bottom:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
+}
+
+.hero h1{
+    font-size:64px;
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    max-width:850px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.hero-buttons a{
+    display:inline-block;
+    margin:10px;
+    padding:14px 28px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.primary-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.primary-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.secondary-btn{
+    border:2px solid #3b82f6;
+    color:white;
+}
+
+.secondary-btn:hover{
+    background:#2563eb;
+}
+
+.cv-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.cv-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:16px 30px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    box-shadow:0 10px 30px rgba(37,99,235,0.25);
+}
+
+.cv-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+section{
+    padding:100px 0;
+}
+
+.section-title{
+    font-size:44px;
+    margin-bottom:55px;
+    text-align:center;
+    color:white;
+}
+
+.about{
+    text-align:center;
+    color:#d1d5db;
+    font-size:18px;
+    max-width:950px;
+    margin:auto;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+.skill-card:hover{
+    transform:translateY(-6px);
+    background:#1e293b;
+}
+
+.skill-card h3{
+    color:#60a5fa;
+    font-size:20px;
+}
+
+.experience-card{
+    background:#111827;
+    border-radius:20px;
+    padding:28px;
+    margin-bottom:25px;
+    border:1px solid rgba(255,255,255,0.05);
+    transition:0.3s;
+}
+
+.experience-card:hover{
+    transform:translateY(-3px);
+}
+
+.experience-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    gap:20px;
+}
+
+.experience-header h3{
+    color:#60a5fa;
+    font-size:22px;
+}
+
+.expand-btn{
+    font-size:34px;
+    font-weight:bold;
+    color:#60a5fa;
+}
+
+.experience-content{
+    display:none;
+    margin-top:20px;
+    color:#d1d5db;
+}
+
+.experience-content.active{
+    display:block;
+}
+
+.experience-content ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.experience-content li{
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    display:block;
+    color:#93c5fd;
+    margin:18px 0;
+    font-size:22px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.contact a:hover{
+    color:white;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    background:#020617;
+    color:#94a3b8;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.section-title{
+    font-size:34px;
+}
+
+.experience-header h3{
+    font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="hero container">
+
+<img src="YOUR_IMAGE_LINK_HERE" alt="Jamil Qasim">
+
+<h1>Jamil Qasim</h1>
+
+<p>
+CRM, Digital Fundraising, Analytics, E-commerce & Marketing Expert with 18+ years of international experience across WHO Foundation, UNRWA, SOS Children’s Villages and global organizations.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#experience" class="primary-btn">
+View Experience
+</a>
+
+<a href="mailto:jim.qasim@gmail.com" class="secondary-btn">
+Contact Me
+</a>
+
+</div>
+
+<div class="cv-buttons">
+
+<a class="cv-btn"
+href="./JamilCV_short_version.pdf"
+target="_blank"
+download>
+📄 Download Short CV
+</a>
+
+<a class="cv-btn"
+href="./JamilCV.pdf"
+target="_blank"
+download>
+📘 Download Full CV
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<p class="about">
+Digital Fundraising, CRM, Analytics and E-commerce expert specialized in donor acquisition, retention, Salesforce CRM administration, marketing automation, performance marketing, data analytics, integrations and digital transformation solutions.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">Key Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Salesforce CRM</h3>
+</div>
+
+<div class="skill-card">
+<h3>Digital Fundraising</h3>
+</div>
+
+<div class="skill-card">
+<h3>Email Marketing</h3>
+</div>
+
+<div class="skill-card">
+<h3>Analytics & Dashboards</h3>
+</div>
+
+<div class="skill-card">
+<h3>Cross-System Integrations</h3>
+</div>
+
+<div class="skill-card">
+<h3>Paid Media</h3>
+</div>
+
+<div class="skill-card">
+<h3>E-commerce</h3>
+</div>
+
+<div class="skill-card">
+<h3>SEO / PPC / SEM</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 <section id="experience">
+
 <div class="container">
 
 <h2 class="section-title">Professional Experience</h2>
-
-<!-- WHO -->
 
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
@@ -25,8 +407,6 @@
 </div>
 </div>
 
-<!-- Freelancer -->
-
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>Freelancer – Digital Solutions, CRM & Marketing</h3>
@@ -43,8 +423,6 @@
 </ul>
 </div>
 </div>
-
-<!-- UNRWA CRM -->
 
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
@@ -65,8 +443,6 @@
 </div>
 </div>
 
-<!-- SOS -->
-
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>SOS Children’s Villages – Head of Fund Development</h3>
@@ -85,8 +461,6 @@
 </div>
 </div>
 
-<!-- ADVANSOFT -->
-
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>Advansoft Dubai – CRM & Digital Marketing Manager</h3>
@@ -103,8 +477,6 @@
 </ul>
 </div>
 </div>
-
-<!-- UNRWA MARKETING -->
 
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
@@ -124,8 +496,6 @@
 </div>
 </div>
 
-<!-- SPICA -->
-
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>Spica IT Solutions – Digital Marketing Consultant</h3>
@@ -143,8 +513,6 @@
 </div>
 </div>
 
-<!-- AL QUDS -->
-
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>Al-Quds Open University – Head of Alumni Affairs</h3>
@@ -161,8 +529,6 @@
 </ul>
 </div>
 </div>
-
-<!-- OTHER -->
 
 <div class="experience-card">
 <div class="experience-header" onclick="toggleJob(this)">
@@ -186,4 +552,53 @@
 </div>
 
 </div>
+
 </section>
+
+<section id="contact">
+
+<div class="container contact">
+
+<h2 class="section-title">Contact</h2>
+
+<a href="mailto:jim.qasim@gmail.com">
+📧 jim.qasim@gmail.com
+</a>
+
+<a href="tel:+970569236904">
+📞 +970 56 923 6904
+</a>
+
+<p style="margin-top:20px;color:#cbd5e1;">
+Palestine | Worldwide Remote
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Jamil Qasim — All Rights Reserved
+</footer>
+
+<script>
+
+function toggleJob(element){
+
+const content = element.nextElementSibling;
+const btn = element.querySelector('.expand-btn');
+
+content.classList.toggle('active');
+
+if(content.classList.contains('active')){
+    btn.textContent='-';
+}else{
+    btn.textContent='+';
+}
+
+}
+
+</script>
+
+</body>
+</html>
