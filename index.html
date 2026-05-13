@@ -1,334 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Jamil Qasim | CRM & Digital Fundraising Expert</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:'Poppins',sans-serif;
-    background:#0f172a;
-    color:white;
-    line-height:1.7;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
-
-header{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:80px 20px;
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
-}
-
-.hero img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #3b82f6;
-    margin-bottom:25px;
-}
-
-.hero h1{
-    font-size:58px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:20px;
-    color:#cbd5e1;
-    max-width:850px;
-    margin:auto;
-}
-
-.hero-buttons{
-    margin-top:35px;
-}
-
-.hero-buttons a{
-    display:inline-block;
-    margin:10px;
-    padding:14px 28px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.primary-btn{
-    background:#2563eb;
-    color:white;
-}
-
-.primary-btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-3px);
-}
-
-.secondary-btn{
-    border:2px solid #3b82f6;
-    color:white;
-}
-
-.secondary-btn:hover{
-    background:#2563eb;
-}
-
-section{
-    padding:100px 0;
-}
-
-.section-title{
-    font-size:42px;
-    margin-bottom:50px;
-    text-align:center;
-}
-
-.about{
-    text-align:center;
-    color:#d1d5db;
-    font-size:18px;
-    max-width:900px;
-    margin:auto;
-}
-
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.skill-card{
-    background:#111827;
-    padding:25px;
-    border-radius:18px;
-    text-align:center;
-    transition:0.3s;
-}
-
-.skill-card:hover{
-    transform:translateY(-5px);
-    background:#1e293b;
-}
-
-.skill-card h3{
-    color:#60a5fa;
-}
-
-.experience-card{
-    background:#111827;
-    border-radius:18px;
-    padding:25px;
-    margin-bottom:25px;
-}
-
-.experience-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    cursor:pointer;
-}
-
-.experience-header h3{
-    color:#60a5fa;
-    font-size:22px;
-}
-
-.expand-btn{
-    font-size:32px;
-    font-weight:bold;
-    color:#60a5fa;
-}
-
-.experience-content{
-    display:none;
-    margin-top:20px;
-    color:#d1d5db;
-}
-
-.experience-content.active{
-    display:block;
-}
-
-.experience-content ul{
-    padding-left:20px;
-    margin-top:15px;
-}
-
-.contact{
-    text-align:center;
-}
-
-.contact a{
-    display:block;
-    color:#93c5fd;
-    margin:15px 0;
-    font-size:22px;
-    text-decoration:none;
-}
-
-.contact a:hover{
-    color:white;
-}
-
-.cv-buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:35px;
-}
-
-.cv-btn{
-    background:#2563eb;
-    color:white;
-    padding:15px 30px;
-    border-radius:12px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.cv-btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-3px);
-}
-
-footer{
-    text-align:center;
-    padding:30px;
-    background:#020617;
-    color:#94a3b8;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-<div class="hero container">
-
-<img src="YOUR_IMAGE_LINK_HERE" alt="Jamil Qasim">
-
-<h1>Jamil Qasim</h1>
-
-<p>
-CRM, Digital Fundraising, Analytics, E-commerce & Marketing Expert with 18+ years of international experience across WHO Foundation, UNRWA, SOS Children’s Villages and global organizations.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#experience" class="primary-btn">
-View Experience
-</a>
-
-<a href="mailto:jim.qasim@gmail.com" class="secondary-btn">
-Contact Me
-</a>
-
-</div>
-
-<div class="cv-buttons">
-
-<a href="JamilCV_short_version.pdf" download class="cv-btn">
-Download Short CV
-</a>
-
-<a href="JamilCV.pdf" download class="cv-btn">
-Download Full CV
-</a>
-
-</div>
-
-</div>
-</header>
-
-<section id="about">
-<div class="container">
-
-<h2 class="section-title">About Me</h2>
-
-<p class="about">
-Digital Fundraising, CRM, Analytics and E-commerce expert specialized in donor acquisition, retention, Salesforce CRM administration, marketing automation, performance marketing, data analytics, integrations and digital transformation solutions.
-</p>
-
-</div>
-</section>
-
-<section id="skills">
-<div class="container">
-
-<h2 class="section-title">Key Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-<h3>Salesforce CRM</h3>
-</div>
-
-<div class="skill-card">
-<h3>Digital Fundraising</h3>
-</div>
-
-<div class="skill-card">
-<h3>Email Marketing</h3>
-</div>
-
-<div class="skill-card">
-<h3>Analytics & Dashboards</h3>
-</div>
-
-<div class="skill-card">
-<h3>Cross-System Integrations</h3>
-</div>
-
-<div class="skill-card">
-<h3>Paid Media</h3>
-</div>
-
-<div class="skill-card">
-<h3>E-commerce</h3>
-</div>
-
-<div class="skill-card">
-<h3>SEO / PPC / SEM</h3>
-</div>
-
-</div>
-
-</div>
-</section>
-
 <section id="experience">
 <div class="container">
 
 <h2 class="section-title">Professional Experience</h2>
 
-<!-- EXPERIENCE -->
+<!-- WHO -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>WHO Foundation – Global Digital Fundraising Consultant</h3>
 <span class="expand-btn">+</span>
@@ -338,18 +15,19 @@ Digital Fundraising, CRM, Analytics and E-commerce expert specialized in donor a
 <p>June 2023 – May 2025 | Geneva, Switzerland</p>
 
 <ul>
-<li>Managed donor acquisition campaigns and strategies.</li>
-<li>Managed donor journeys and retention systems.</li>
-<li>Led email marketing and systems integrations.</li>
-<li>Built KPI dashboards and reporting systems.</li>
-<li>Managed paid fundraising campaigns.</li>
+<li>Managed donor acquisition campaigns and fundraising strategies.</li>
+<li>Managed donor retention, donor journeys and segmentation.</li>
+<li>Managed online campaigns, integrations and email marketing.</li>
+<li>Executed paid fundraising campaigns across digital channels.</li>
+<li>Built dashboards, KPI reports and campaign analytics.</li>
+<li>Worked with communications teams and creative agencies.</li>
 </ul>
+</div>
+</div>
 
-</div>
-</div>
+<!-- Freelancer -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>Freelancer – Digital Solutions, CRM & Marketing</h3>
 <span class="expand-btn">+</span>
@@ -359,107 +37,149 @@ Digital Fundraising, CRM, Analytics and E-commerce expert specialized in donor a
 <p>2021 – Current</p>
 
 <ul>
-<li>Provided CRM, analytics and fundraising consulting.</li>
-<li>Worked on integrations, automation and marketing solutions.</li>
+<li>Provided CRM and fundraising consulting services.</li>
+<li>Worked on analytics, automation and integrations.</li>
+<li>Managed digital marketing and email campaigns.</li>
 </ul>
+</div>
+</div>
 
-</div>
-</div>
+<!-- UNRWA CRM -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>UNRWA – Salesforce CRM & Fundraising Platforms Manager</h3>
 <span class="expand-btn">+</span>
 </div>
 
 <div class="experience-content">
-<p>2020 – 2021 | Amman</p>
+<p>Sep 2020 – May 2021 | Amman</p>
 
 <ul>
 <li>Managed Salesforce CRM and fundraising platforms.</li>
-<li>Handled integrations with payment gateways and Mailchimp.</li>
-<li>Created dashboards, workflows and automation.</li>
-<li>Managed data imports and cleansing.</li>
+<li>Handled Mailchimp and payment gateway integrations.</li>
+<li>Created dashboards, workflows and automations.</li>
+<li>Managed data imports, mapping and cleansing.</li>
+<li>Provided technical guidance and staff training.</li>
 </ul>
+</div>
+</div>
 
-</div>
-</div>
+<!-- SOS -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>SOS Children’s Villages – Head of Fund Development</h3>
 <span class="expand-btn">+</span>
 </div>
 
 <div class="experience-content">
-<p>2018 – 2020 | Palestine</p>
+<p>Apr 2018 – Aug 2020 | Palestine</p>
 
 <ul>
-<li>Led fundraising and donor engagement strategies.</li>
-<li>Managed fundraising team and budget.</li>
-<li>Led Salesforce implementation for MENA region.</li>
+<li>Led fundraising strategies and donor engagement.</li>
+<li>Managed fundraising team and department budget.</li>
+<li>Implemented Salesforce solution for MENA region.</li>
+<li>Managed CRM systems and fundraising innovations.</li>
 </ul>
+</div>
+</div>
 
-</div>
-</div>
+<!-- ADVANSOFT -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>Advansoft Dubai – CRM & Digital Marketing Manager</h3>
 <span class="expand-btn">+</span>
 </div>
 
 <div class="experience-content">
-<p>2017 – 2018 | Dubai</p>
+<p>Feb 2017 – Mar 2018 | Dubai</p>
 
 <ul>
-<li>Managed digital campaigns and SEO/PPC.</li>
+<li>Managed SEO, PPC and digital campaigns.</li>
 <li>Led email marketing and analytics reporting.</li>
-<li>Managed CRM systems and client campaigns.</li>
+<li>Managed CRM systems and marketing automation.</li>
 </ul>
+</div>
+</div>
 
-</div>
-</div>
+<!-- UNRWA MARKETING -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
 <h3>UNRWA – E-Marketing & Digital Fundraising Manager</h3>
 <span class="expand-btn">+</span>
 </div>
 
 <div class="experience-content">
-<p>2012 – 2017</p>
+<p>Dec 2012 – Jan 2017</p>
 
 <ul>
-<li>Managed online donation platform and CRM integrations.</li>
-<li>Developed digital fundraising strategies.</li>
-<li>Led analytics and campaign optimization.</li>
+<li>Managed online donation platforms and CRM integrations.</li>
+<li>Developed fundraising and acquisition strategies.</li>
+<li>Led analytics, evaluation and campaign optimization.</li>
+<li>Managed digital marketing budgets and reports.</li>
 </ul>
+</div>
+</div>
 
-</div>
-</div>
+<!-- SPICA -->
 
 <div class="experience-card">
-
 <div class="experience-header" onclick="toggleJob(this)">
-<h3>Additional Experiences</h3>
+<h3>Spica IT Solutions – Digital Marketing Consultant</h3>
+<span class="expand-btn">+</span>
+</div>
+
+<div class="experience-content">
+<p>Apr 2009 – Nov 2012 | Abu Dhabi</p>
+
+<ul>
+<li>Managed integrated digital marketing plans.</li>
+<li>Handled social media and websites management.</li>
+<li>Created and executed email campaigns.</li>
+</ul>
+</div>
+</div>
+
+<!-- AL QUDS -->
+
+<div class="experience-card">
+<div class="experience-header" onclick="toggleJob(this)">
+<h3>Al-Quds Open University – Head of Alumni Affairs</h3>
+<span class="expand-btn">+</span>
+</div>
+
+<div class="experience-content">
+<p>Jul 2007 – Mar 2009</p>
+
+<ul>
+<li>Developed alumni portal and database systems.</li>
+<li>Managed alumni fundraising and engagement.</li>
+<li>Led activities, scholarships and partnerships.</li>
+</ul>
+</div>
+</div>
+
+<!-- OTHER -->
+
+<div class="experience-card">
+<div class="experience-header" onclick="toggleJob(this)">
+<h3>Additional Technical Experience</h3>
 <span class="expand-btn">+</span>
 </div>
 
 <div class="experience-content">
 
 <ul>
-<li>Spica IT Solutions – Web Content & Digital Marketing Consultant</li>
-<li>Al-Quds Open University – Head of Alumni Affairs</li>
-<li>Palestine Red Crescent Society – Webmaster</li>
-<li>Central Elections Commission – Webmaster</li>
-<li>Shivomani Est. Boston – Technical Support Analyst</li>
-<li>Oakland Inc. Pittsburgh – Web & Database Administrator</li>
-<li>Carnegie Science Center – Internship</li>
+<li>ICDL Trainer – Al-Quds Open University</li>
+<li>Webmaster – Palestine Red Crescent Society</li>
+<li>Webmaster – Central Elections Commission</li>
+<li>Software Technical Support Analyst – Shivomani Est.</li>
+<li>Web & Database Administrator – Oakland Inc.</li>
+<li>Computer Systems Internship – Carnegie Science Center</li>
+<li>Web Design Internship – YMCA Pittsburgh</li>
 </ul>
 
 </div>
@@ -467,49 +187,3 @@ Digital Fundraising, CRM, Analytics and E-commerce expert specialized in donor a
 
 </div>
 </section>
-
-<section id="contact">
-<div class="container contact">
-
-<h2 class="section-title">Contact</h2>
-
-<a href="mailto:jim.qasim@gmail.com">
-📧 jim.qasim@gmail.com
-</a>
-
-<a href="tel:+970569236904">
-📞 +970 56 923 6904
-</a>
-
-<p style="margin-top:20px;color:#cbd5e1;">
-Palestine | Worldwide Remote
-</p>
-
-</div>
-</section>
-
-<footer>
-© 2026 Jamil Qasim — All Rights Reserved
-</footer>
-
-<script>
-
-function toggleJob(element){
-
-const content = element.nextElementSibling;
-const btn = element.querySelector('.expand-btn');
-
-content.classList.toggle('active');
-
-if(content.classList.contains('active')){
-    btn.textContent='-';
-}else{
-    btn.textContent='+';
-}
-
-}
-
-</script>
-
-</body>
-</html>
