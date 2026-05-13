@@ -1,603 +1,706 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jamil Qasim Abdalmuhdi | Digital Fundraising & CRM Expert</title>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<title>Jamil Qasim | CRM & Digital Fundraising Expert</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #030712;
+      color: white;
+      overflow-x: hidden;
+      background-image:
+        radial-gradient(circle at top left, rgba(59,130,246,0.15), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(249,115,22,0.12), transparent 30%);
+    }
 
-<style>
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+    .container {
+      width: 90%;
+      max-width: 1250px;
+      margin: auto;
+    }
 
-html{
-    scroll-behavior:smooth;
-}
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+      background: rgba(2, 6, 23, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#0f172a;
-    color:white;
-    line-height:1.7;
-}
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
 
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-}
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
 
-header{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:100px 20px;
-    background:linear-gradient(135deg,#0f172a,#1e3a8a);
-}
+    .logo-box {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #2563eb, #f97316);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 800;
+    }
 
-.hero img{
-    width:190px;
-    height:190px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid #3b82f6;
-    margin-bottom:25px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.4);
-}
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
 
-.hero h1{
-    font-size:64px;
-    margin-bottom:15px;
-    font-weight:700;
-}
+    .nav-links a {
+      color: #cbd5e1;
+      transition: 0.3s;
+      font-size: 0.95rem;
+    }
 
-.hero p{
-    font-size:20px;
-    color:#cbd5e1;
-    max-width:850px;
-    margin:auto;
-}
+    .nav-links a:hover {
+      color: #3b82f6;
+    }
 
-.hero-buttons{
-    margin-top:35px;
-}
+    .btn {
+      padding: 14px 24px;
+      border-radius: 12px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+    }
 
-.hero-buttons a{
-    display:inline-block;
-    margin:10px;
-    padding:14px 28px;
-    border-radius:14px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-}
+    .btn-primary {
+      background: linear-gradient(135deg, #2563eb, #f97316);
+      color: white;
+    }
 
-.primary-btn{
-    background:#2563eb;
-    color:white;
-}
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(37,99,235,0.35);
+    }
 
-.primary-btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-3px);
-}
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.15);
+      color: white;
+    }
 
-.secondary-btn{
-    border:2px solid #3b82f6;
-    color:white;
-}
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.06);
+    }
 
-.secondary-btn:hover{
-    background:#2563eb;
-}
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 120px;
+    }
 
-.cv-buttons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:40px;
-}
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
 
-.cv-btn{
-    display:inline-block;
-    background:#2563eb;
-    color:white;
-    padding:16px 30px;
-    border-radius:14px;
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-    box-shadow:0 10px 30px rgba(37,99,235,0.25);
-}
+    .badge {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: rgba(37,99,235,0.18);
+      border: 1px solid rgba(37,99,235,0.4);
+      color: #93c5fd;
+      font-size: 0.85rem;
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
 
-.cv-btn:hover{
-    background:#1d4ed8;
-    transform:translateY(-3px);
-}
+    .hero h1 {
+      font-size: 4rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
 
-section{
-    padding:100px 0;
-}
+    .gradient-text {
+      background: linear-gradient(135deg, #60a5fa, #fb923c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-.section-title{
-    font-size:44px;
-    margin-bottom:55px;
-    text-align:center;
-    color:white;
-}
+    .hero-subtitle {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      color: #dbeafe;
+      margin-bottom: 24px;
+    }
 
-.about{
-    text-align:center;
-    color:#d1d5db;
-    font-size:18px;
-    max-width:950px;
-    margin:auto;
-}
+    .hero-description {
+      color: #94a3b8;
+      line-height: 1.9;
+      margin-bottom: 35px;
+      font-size: 1.05rem;
+    }
 
-.skills-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:25px;
-}
+    .hero-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-bottom: 30px;
+      color: #cbd5e1;
+    }
 
-.skill-card{
-    background:#111827;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-    transition:0.3s;
-    border:1px solid rgba(255,255,255,0.05);
-}
+    .hero-info div {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-.skill-card:hover{
-    transform:translateY(-6px);
-    background:#1e293b;
-}
+    .hero-buttons {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
 
-.skill-card h3{
-    color:#60a5fa;
-    font-size:20px;
-}
+    .hero-image {
+      position: relative;
+    }
 
-.experience-card{
-    background:#111827;
-    border-radius:20px;
-    padding:28px;
-    margin-bottom:25px;
-    border:1px solid rgba(255,255,255,0.05);
-    transition:0.3s;
-}
+    .hero-image img {
+      width: 100%;
+      border-radius: 35px;
+      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+    }
 
-.experience-card:hover{
-    transform:translateY(-3px);
-}
+    section {
+      padding: 100px 0;
+    }
 
-.experience-header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    cursor:pointer;
-    gap:20px;
-}
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
 
-.experience-header h3{
-    color:#60a5fa;
-    font-size:22px;
-}
+    .section-subtitle {
+      color: #94a3b8;
+      margin-bottom: 50px;
+      line-height: 1.8;
+      max-width: 800px;
+    }
 
-.expand-btn{
-    font-size:34px;
-    font-weight:bold;
-    color:#60a5fa;
-}
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+    }
 
-.experience-content{
-    display:none;
-    margin-top:20px;
-    color:#d1d5db;
-}
+    .card {
+      background: rgba(15,23,42,0.72);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 35px;
+      transition: 0.35s;
+      backdrop-filter: blur(10px);
+    }
 
-.experience-content.active{
-    display:block;
-}
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(59,130,246,0.4);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    }
 
-.experience-content ul{
-    margin-top:15px;
-    padding-left:20px;
-}
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      color: #60a5fa;
+    }
 
-.experience-content li{
-    margin-bottom:10px;
-}
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
 
-.contact{
-    text-align:center;
-}
+    .card p {
+      color: #94a3b8;
+      line-height: 1.8;
+    }
 
-.contact a{
-    display:block;
-    color:#93c5fd;
-    margin:18px 0;
-    font-size:22px;
-    text-decoration:none;
-    transition:0.3s;
-}
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
 
-.contact a:hover{
-    color:white;
-}
+    .timeline-item {
+      background: rgba(15,23,42,0.75);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 24px;
+      padding: 35px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
 
-footer{
-    text-align:center;
-    padding:35px;
-    background:#020617;
-    color:#94a3b8;
-    margin-top:60px;
-}
+    .timeline-item:hover {
+      border-color: rgba(249,115,22,0.5);
+    }
 
-@media(max-width:768px){
+    .timeline-date {
+      color: #60a5fa;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-.hero h1{
-    font-size:42px;
-}
+    .timeline-title {
+      font-size: 1.35rem;
+      margin-bottom: 10px;
+    }
 
-.hero p{
-    font-size:17px;
-}
+    .timeline-company {
+      color: #fb923c;
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
 
-.section-title{
-    font-size:34px;
-}
+    .timeline-description {
+      color: #94a3b8;
+      line-height: 1.8;
+    }
 
-.experience-header h3{
-    font-size:18px;
-}
+    .expandable {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+    }
 
-}
+    .expandable-content {
+      padding-top: 25px;
+    }
 
-</style>
+    .expandable ul {
+      padding-left: 18px;
+      color: #cbd5e1;
+      line-height: 2;
+    }
 
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-card {
+      background: rgba(15,23,42,0.7);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 40px;
+      border-radius: 24px;
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      font-size: 3rem;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #60a5fa, #fb923c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .education-card {
+      background: rgba(15,23,42,0.75);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 45px;
+    }
+
+    .education-card h3 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .education-card p {
+      color: #cbd5e1;
+      line-height: 1.9;
+    }
+
+    footer {
+      padding: 50px 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    @media(max-width: 600px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
-
 <body>
 
 <header>
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <div class="logo-box">JQ</div>
+        <span>Jamil Qasim</span>
+      </div>
 
-<div class="hero container">
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-<img src="YOUR_IMAGE_LINK_HERE" alt="Jamil Qasim">
-
-<h1>Jamil Qasim</h1>
-
-<p>
-CRM, Digital Fundraising, Analytics, E-commerce & Marketing Expert with 18+ years of international experience across WHO Foundation, UNRWA, SOS Children’s Villages and global organizations.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#experience" class="primary-btn">
-View Experience
-</a>
-
-<a href="mailto:jim.qasim@gmail.com" class="secondary-btn">
-Contact Me
-</a>
-
-</div>
-
-<div class="cv-buttons">
-
-<a class="cv-btn"
-href="./JamilCV_short_version.pdf"
-target="_blank"
-download>
-📄 Download Short CV
-</a>
-
-<a class="cv-btn"
-href="./JamilCV.pdf"
-target="_blank"
-download>
-📘 Download Full CV
-</a>
-
-</div>
-
-</div>
-
+      <a href="#contact" class="btn btn-primary">
+        <i class="fa-solid fa-paper-plane"></i>
+        Contact
+      </a>
+    </nav>
+  </div>
 </header>
 
-<section id="about">
+<section class="hero" id="home">
+  <div class="container hero-grid">
 
-<div class="container">
+    <div>
+      <div class="badge">DIGITAL FUNDRAISING & CRM EXPERT</div>
 
-<h2 class="section-title">About Me</h2>
+      <h1>
+        Jamil Qasim <br>
+        <span class="gradient-text">Abdalmuhdi</span>
+      </h1>
 
-<p class="about">
-Digital Fundraising, CRM, Analytics and E-commerce expert specialized in donor acquisition, retention, Salesforce CRM administration, marketing automation, performance marketing, data analytics, integrations and digital transformation solutions.
-</p>
+      <div class="hero-subtitle">
+        Digital Marketing, Fundraising & Growth, CRM Solutions & Automation Expert
+      </div>
 
-</div>
+      <p class="hero-description">
+        18+ years of experience leading digital fundraising, donor acquisition,
+        CRM transformation, automation, ecommerce solutions, digital marketing,
+        analytics, and performance growth strategies for global organizations.
+      </p>
 
+      <div class="hero-info">
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          jim.qasim@gmail.com
+        </div>
+
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          Worldwide (Remote)
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i>
+          Get In Touch
+        </a>
+
+        <a href="#experience" class="btn btn-outline">
+          <i class="fa-solid fa-briefcase"></i>
+          View Experience
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=40&w=300&auto=format&fit=crop" 
+     alt="Professional portrait"
+     style="width:250px; height:auto;">
+    </div>
+
+  </div>
 </section>
 
-<section id="skills">
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
 
-<div class="container">
+    <p class="section-subtitle">
+      Experienced digital fundraising, CRM, marketing and business development professional with extensive expertise in donor acquisition, retention, automation, ecommerce, analytics, email marketing, and digital transformation strategies.
+    </p>
 
-<h2 class="section-title">Key Skills</h2>
+    <div class="cards-grid">
 
-<div class="skills-grid">
+      <div class="card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Digital Marketing, Fundraising & Growth</h3>
+      </div>
 
-<div class="skill-card">
-<h3>Salesforce CRM</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-cloud"></i>
+        <h3>CRM Solutions, Integrations & Automation</h3>
+      </div>
 
-<div class="skill-card">
-<h3>Digital Fundraising</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-chart-simple"></i>
+        <h3>Data, Performance & Insights</h3>
+      </div>
 
-<div class="skill-card">
-<h3>Email Marketing</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-users"></i>
+        <h3>Customers/Donors Acquisition & Retention</h3>
+      </div>
 
-<div class="skill-card">
-<h3>Analytics & Dashboards</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email Marketing</h3>
+      </div>
 
-<div class="skill-card">
-<h3>Cross-System Integrations</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Web Solutions & Administration</h3>
+      </div>
 
-<div class="skill-card">
-<h3>Paid Media</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>Digital & Paid Media</h3>
+      </div>
 
-<div class="skill-card">
-<h3>E-commerce</h3>
-</div>
+      <div class="card">
+        <i class="fa-solid fa-earth-americas"></i>
+        <h3>Global Experiences</h3>
+      </div>
 
-<div class="skill-card">
-<h3>SEO / PPC / SEM</h3>
-</div>
+    </div>
+  </div>
+</section>
 
-</div>
+<section id="education">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
 
-</div>
+    <div class="education-card">
+      <h3>La Roche University</h3>
 
+      <p>
+        Pittsburgh, Pennsylvania, USA
+      </p>
+
+      <br>
+
+      <p>
+        Bachelor of Science in Information Technology with a Minor in Mathematics.
+      </p>
+
+      <br>
+
+      <p>
+        1999 – 2003
+      </p>
+    </div>
+  </div>
 </section>
 
 <section id="experience">
+  <div class="container">
 
-<div class="container">
+    <h2 class="section-title">Professional Experience</h2>
 
-<h2 class="section-title">Professional Experience</h2>
+    <div class="timeline">
 
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>WHO Foundation – Global Digital Fundraising Consultant</h3>
-<span class="expand-btn">+</span>
-</div>
+      <div class="timeline-item" onclick="toggleExpand(this)">
+        <div class="timeline-date">Jun 2023 – May 2025</div>
+        <div class="timeline-title">Global Digital Fundraising Consultant</div>
+        <div class="timeline-company">WHO Foundation – Geneva, Switzerland</div>
 
-<div class="experience-content">
-<p>June 2023 – May 2025 | Geneva, Switzerland</p>
+        <div class="timeline-description">
+          Leading digital fundraising strategies, donor acquisition campaigns,
+          retention journeys, systems integrations, email marketing and performance dashboards.
+        </div>
 
-<ul>
-<li>Managed donor acquisition campaigns and fundraising strategies.</li>
-<li>Managed donor retention, donor journeys and segmentation.</li>
-<li>Managed online campaigns, integrations and email marketing.</li>
-<li>Executed paid fundraising campaigns across digital channels.</li>
-<li>Built dashboards, KPI reports and campaign analytics.</li>
-<li>Worked with communications teams and creative agencies.</li>
-</ul>
-</div>
-</div>
+        <div class="expandable">
+          <div class="expandable-content">
+            <ul>
+              <li>Managed fundraising systems integrations and CRM journeys.</li>
+              <li>Led acquisition and retention campaigns.</li>
+              <li>Developed donor journeys and automation workflows.</li>
+              <li>Built performance analytics dashboards and reporting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>Freelancer – Digital Solutions, CRM & Marketing</h3>
-<span class="expand-btn">+</span>
-</div>
+      <div class="timeline-item" onclick="toggleExpand(this)">
+        <div class="timeline-date">Sep 2020 – May 2021</div>
+        <div class="timeline-title">Salesforce CRM & Fundraising Platforms Manager</div>
+        <div class="timeline-company">UNRWA HQ – Amman</div>
 
-<div class="experience-content">
-<p>2021 – Current</p>
+        <div class="timeline-description">
+          Managed Salesforce CRM, integrations, donation platforms and digital fundraising operations.
+        </div>
 
-<ul>
-<li>Provided CRM and fundraising consulting services.</li>
-<li>Worked on analytics, automation and integrations.</li>
-<li>Managed digital marketing and email campaigns.</li>
-</ul>
-</div>
-</div>
+        <div class="expandable">
+          <div class="expandable-content">
+            <ul>
+              <li>Managed Salesforce CRM operations.</li>
+              <li>Led donation platforms and integrations.</li>
+              <li>Optimized donor management workflows.</li>
+              <li>Improved fundraising performance reporting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>UNRWA – Salesforce CRM & Fundraising Platforms Manager</h3>
-<span class="expand-btn">+</span>
-</div>
+      <div class="timeline-item" onclick="toggleExpand(this)">
+        <div class="timeline-date">Apr 2018 – Aug 2020</div>
+        <div class="timeline-title">Head of Fund Development & Communications</div>
+        <div class="timeline-company">SOS Children's Villages – Palestine</div>
 
-<div class="experience-content">
-<p>Sep 2020 – May 2021 | Amman</p>
+        <div class="timeline-description">
+          Led fundraising strategies, CRM solutions, donor journeys and communications.
+        </div>
 
-<ul>
-<li>Managed Salesforce CRM and fundraising platforms.</li>
-<li>Handled Mailchimp and payment gateway integrations.</li>
-<li>Created dashboards, workflows and automations.</li>
-<li>Managed data imports, mapping and cleansing.</li>
-<li>Provided technical guidance and staff training.</li>
-</ul>
-</div>
-</div>
+        <div class="expandable">
+          <div class="expandable-content">
+            <ul>
+              <li>Implemented Salesforce CRM solutions.</li>
+              <li>Led regional fundraising operations.</li>
+              <li>Managed donor journeys and retention.</li>
+              <li>Oversaw communications and digital campaigns.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>SOS Children’s Villages – Head of Fund Development</h3>
-<span class="expand-btn">+</span>
-</div>
+    </div>
 
-<div class="experience-content">
-<p>Apr 2018 – Aug 2020 | Palestine</p>
+    <div class="stats-grid">
 
-<ul>
-<li>Led fundraising strategies and donor engagement.</li>
-<li>Managed fundraising team and department budget.</li>
-<li>Implemented Salesforce solution for MENA region.</li>
-<li>Managed CRM systems and fundraising innovations.</li>
-</ul>
-</div>
-</div>
+      <div class="stat-card">
+        <h3>700%+</h3>
+        <p>Increase in Monthly Donations</p>
+      </div>
 
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>Advansoft Dubai – CRM & Digital Marketing Manager</h3>
-<span class="expand-btn">+</span>
-</div>
+      <div class="stat-card">
+        <h3>950%+</h3>
+        <p>Growth in Online Engagement</p>
+      </div>
 
-<div class="experience-content">
-<p>Feb 2017 – Mar 2018 | Dubai</p>
+      <div class="stat-card">
+        <h3>18+</h3>
+        <p>Years of Experience</p>
+      </div>
 
-<ul>
-<li>Managed SEO, PPC and digital campaigns.</li>
-<li>Led email marketing and analytics reporting.</li>
-<li>Managed CRM systems and marketing automation.</li>
-</ul>
-</div>
-</div>
+      <div class="stat-card">
+        <h3>Global</h3>
+        <p>NGO & International Experience</p>
+      </div>
 
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>UNRWA – E-Marketing & Digital Fundraising Manager</h3>
-<span class="expand-btn">+</span>
-</div>
+    </div>
 
-<div class="experience-content">
-<p>Dec 2012 – Jan 2017</p>
-
-<ul>
-<li>Managed online donation platforms and CRM integrations.</li>
-<li>Developed fundraising and acquisition strategies.</li>
-<li>Led analytics, evaluation and campaign optimization.</li>
-<li>Managed digital marketing budgets and reports.</li>
-</ul>
-</div>
-</div>
-
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>Spica IT Solutions – Digital Marketing Consultant</h3>
-<span class="expand-btn">+</span>
-</div>
-
-<div class="experience-content">
-<p>Apr 2009 – Nov 2012 | Abu Dhabi</p>
-
-<ul>
-<li>Managed integrated digital marketing plans.</li>
-<li>Handled social media and websites management.</li>
-<li>Created and executed email campaigns.</li>
-</ul>
-</div>
-</div>
-
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>Al-Quds Open University – Head of Alumni Affairs</h3>
-<span class="expand-btn">+</span>
-</div>
-
-<div class="experience-content">
-<p>Jul 2007 – Mar 2009</p>
-
-<ul>
-<li>Developed alumni portal and database systems.</li>
-<li>Managed alumni fundraising and engagement.</li>
-<li>Led activities, scholarships and partnerships.</li>
-</ul>
-</div>
-</div>
-
-<div class="experience-card">
-<div class="experience-header" onclick="toggleJob(this)">
-<h3>Additional Technical Experience</h3>
-<span class="expand-btn">+</span>
-</div>
-
-<div class="experience-content">
-
-<ul>
-<li>ICDL Trainer – Al-Quds Open University</li>
-<li>Webmaster – Palestine Red Crescent Society</li>
-<li>Webmaster – Central Elections Commission</li>
-<li>Software Technical Support Analyst – Shivomani Est.</li>
-<li>Web & Database Administrator – Oakland Inc.</li>
-<li>Computer Systems Internship – Carnegie Science Center</li>
-<li>Web Design Internship – YMCA Pittsburgh</li>
-</ul>
-
-</div>
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <section id="contact">
+  <div class="container">
 
-<div class="container contact">
+    <h2 class="section-title">Let's Work Together</h2>
 
-<h2 class="section-title">Contact</h2>
+    <p class="section-subtitle">
+      Open to digital fundraising, CRM, automation, business development and global consulting opportunities.
+    </p>
 
-<a href="mailto:jim.qasim@gmail.com">
-📧 jim.qasim@gmail.com
-</a>
+    <div class="cards-grid">
 
-<a href="tel:+970569236904">
-📞 +970 56 923 6904
-</a>
+      <div class="card">
+        <i class="fa-solid fa-envelope"></i>
+        <h3>Email</h3>
+        <p>jim.qasim@gmail.com</p>
+      </div>
 
-<p style="margin-top:20px;color:#cbd5e1;">
-Palestine | Worldwide Remote
-</p>
+      <div class="card">
+        <i class="fa-solid fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+970 56 923 6904</p>
+      </div>
 
-</div>
+      <div class="card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h3>Location</h3>
+        <p>Worldwide (Remote)</p>
+      </div>
 
+    </div>
+
+  </div>
 </section>
 
 <footer>
-© 2026 Jamil Qasim — All Rights Reserved
+  <div class="container">
+    © 2026 Jamil Qasim Abdalmuhdi — Built with passion and professionalism.
+  </div>
 </footer>
 
 <script>
+  function toggleExpand(element) {
+    const expandable = element.querySelector('.expandable');
 
-function toggleJob(element){
-
-const content = element.nextElementSibling;
-const btn = element.querySelector('.expand-btn');
-
-content.classList.toggle('active');
-
-if(content.classList.contains('active')){
-    btn.textContent='-';
-}else{
-    btn.textContent='+';
-}
-
-}
-
+    if (expandable.style.maxHeight) {
+      expandable.style.maxHeight = null;
+    } else {
+      expandable.style.maxHeight = expandable.scrollHeight + 'px';
+    }
+  }
 </script>
 
 </body>
